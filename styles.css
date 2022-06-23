@@ -1,7 +1,7 @@
 body {
   height: 100%;
   background-color: rgb(33, 28, 0);
-  color: white;
+  color:white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,47 +18,34 @@ body {
   justify-content: center;
   align-items: center;
   gap: 4em;
+  margin-right: 4em;
 }
 
 .button {
   text-align: center;
   /* height: 30px; */
   padding: 7px 20px;
-  color: white;
-  background-color: rgb(0, 0, 0);
+  color:snow;
+  background-color: black;
   /* width: 100px; */
   transition-duration: 0.2s;
   margin: 4px 2px;
-  border: 1px solid rgb(127, 127, 127);
+  border: 1px solid olive;
   font-family: monospace;
   font-size: 18px;
 }
 
 .button:hover {
-  background-color: rgb(70, 70, 70);
-  color: white;
+  background-color: rgb(45, 38, 26);
+  color: snow;
   padding: 10px 22px;
-}
-
-input[type='text'] {
-  color: white;
-  border: 1px solid gray;
-  background-color: black;
-  width: 60px;
-  transition-duration: 0.4s;
-}
-
-input:hover {
-  /* background-color: rgb(0, 0, 0); */
-  color: white;
-  padding: 2px 8px;
 }
 
 input.color {
   background-color: rgb(33, 28, 0);
-  border: 0px solid rgb(0, 0, 0);
-  height: 45px;
-  width: 90px;
+  border: 0px solid black;
+  height: 60px;
+  width: 120px;
   padding: 7px;
   transition-duration: 0.3s;
 }
@@ -69,7 +56,7 @@ input.color:hover {
 
 .container {
   --size: 4;
-  background-color: rgb(62, 62, 62);
+  background-color: rgb(70, 57, 21);
   width: 960px;
   height: 960px;
   display: grid;
@@ -94,6 +81,7 @@ div.box {
   align-content: center;
   flex: 1;
   margin-top: 2em;
+  color:snow
 }
 .myslider {
   -webkit-appearance: none;
