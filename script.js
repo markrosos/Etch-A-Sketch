@@ -12,7 +12,7 @@
 // === Changing the div's background color using javascript
 
 // 4. Add button to top of screen that will snd user a popup asking
-// for the number od squares per side for the new grid. Once
+// for the number of squares per side for the new grid. Once
 // entered, the existing grid should be removed and a new grid
 // generated in the same total space as before (e.g. 960px wide)
 // so that you've got a new sketch pad. Tip: Set the limit for the
@@ -21,7 +21,7 @@
 // === Research HTML button tags and how to make a javascript
 //  function run when one is clicked
 // === Also Check out "prompt" (?)
-// === You should be able to enter 64 and hae brand new 64x64 grid
+// === You should be able to enter 64 and have brand new 64x64 grid
 //  pop up without changing total amount of pixels used
 
 // 5. (Optional): Instead of just changing color of square from
@@ -35,19 +35,26 @@
 'use strict';
 
 const container = document.querySelector('.container');
-const sizeEle = document.querySelector('.size');
+const sizeEle = document.querySelector('.rangeslider');
 const color = document.querySelector('.color');
 const resetBtn = document.querySelector('.button');
 let draw = false;
 
-let size = sizeEle.value;
+let rangeslider = document.getElementById('sliderRange');
+let output = document.getElementById('value');
+output.innerHTML = rangeslider.value;
+
+rangeslider.oninput = function () {
+  output.innerHTML = this.value;
+};
+
+let size = rangeslider.value;
 
 function addGrid() {
-  container.style.setProperty('--size', size);
+    container.style.setProperty('--size', size);
   for (let i = 0; i < size * size; i++) {
-    const div = document.createElement('test');
+    const div = document.createElement('div');
     div.classList.add('box');
-
     div.addEventListener('mouseover', () => onMouseOver(div));
     div.addEventListener('mousedown', () => onMouseDown(div));
 
@@ -81,7 +88,7 @@ function reset() {
 
 resetBtn.addEventListener('click', reset);
 
-sizeEle.addEventListener('keyup', function () {
-  size = sizeEle.value;
+sizeEle.addEventListener('click', function () {
+  size = rangeslider.value;
   reset();
 });

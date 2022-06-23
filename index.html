@@ -11,9 +11,19 @@
   </head>
   <body>
     <div class="options">
+        <div class="rangeslider">
+          <input
+            type="range"
+            min="10"
+            max="64"
+            value="10"
+            class="myslider"
+            id="sliderRange"
+          />
+          <p>Value: <span id="value"></span></p>
+        </div>
       <button class="button">Reset</button>
       <input type="color" value="#ffa500" class="color" />
-      <input type="text" value="10" class="size" />
     </div>
     <div class="container"></div>
   </body>
