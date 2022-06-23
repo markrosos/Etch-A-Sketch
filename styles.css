@@ -56,7 +56,7 @@ input.color:hover {
 
 .container {
   --size: 4;
-  background-color: rgb(70, 57, 21);
+  background-color: rgb(57, 52, 37);
   width: 960px;
   height: 960px;
   display: grid;
