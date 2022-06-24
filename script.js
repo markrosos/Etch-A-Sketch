@@ -51,7 +51,7 @@ rangeslider.oninput = function () {
 let size = rangeslider.value;
 
 function addGrid() {
-    container.style.setProperty('--size', size);
+  container.style.setProperty('--size', size);
   for (let i = 0; i < size * size; i++) {
     const div = document.createElement('div');
     div.classList.add('box');

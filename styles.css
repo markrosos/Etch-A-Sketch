@@ -12,13 +12,33 @@ body {
 }
 
 .options {
-  padding: 20px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   display: flex;
+  width: 900px;
+  justify-content: space-around;
+  height: 150px;
+}
+
+.buttonbox {
+  display: flex;
+  width: 300px;
+  /* flex: 1; */
   justify-content: center;
   align-items: center;
-  gap: 4em;
-  margin-right: 4em;
+}
+
+.colorbox { 
+  display: flex;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.p {
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  align-content: flex-end;
 }
 
 .button {
@@ -74,14 +94,12 @@ div.box {
 .rangeslider {
   display: flex;
   flex-direction: column;
-  height: 100px;
-  width: 200px;
-  justify-content: center;
+  width: 300px;
+  justify-content: end;
   align-items: center;
-  align-content: center;
-  flex: 1;
-  margin-top: 2em;
-  color:snow
+  align-content: flex-end;
+  color:snow;
+  padding-bottom: 0.7em;
 }
 .myslider {
   -webkit-appearance: none;
@@ -92,6 +110,7 @@ div.box {
   opacity: 0.7;
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
+  width: 200px;
 }
 
 .myslider:hover {
